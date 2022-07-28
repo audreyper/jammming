@@ -2,6 +2,7 @@ import './App.css';
 import SearchBar from '../SearchBar/SearchBar';
 import SearchResults from '../SearchResults/SearchResults';
 import Playlist from '../Playlist/Playlist';
+import Spotify from '../../util/Spotify';
 
 function App() {
 
@@ -37,9 +38,12 @@ function App() {
     )  
    }
 
-   function search(term) {
-    console.log(term);
-   }
+  function search(term) {
+    Spotify.search(term)
+    .then(tracks => {
+      setSearchResults({tracks: tracks})
+    })
+  }
 
   return (
   <div>
