@@ -38,3 +38,8 @@
   .SearchButton:hover {
     background-color: rgba(108, 65, 233, .7);
   }
+
+   .SearchBar h1 {
+   background-color: transparent;
+   font-size: 1.5rem;
+  }

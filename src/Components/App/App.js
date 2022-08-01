@@ -1,3 +1,5 @@
+import { useState } from 'react';
+import Swal from 'sweetalert2'
 import './App.css';
 import SearchBar from '../SearchBar/SearchBar';
 import SearchResults from '../SearchResults/SearchResults';
@@ -6,13 +8,12 @@ import Spotify from '../../util/Spotify';
 
 function App() {
 
+  const initialStatePlaylistName = "Your playlist's name"
+
   const [searchResults, setSearchResults] = useState([]);
-  const [playlistName, setPlaylistName] = useState([]);
+  const [playlistName, setPlaylistName] = useState(initialStatePlaylistName);
   const [playlistTracks, setPlaylistTracks] = useState([]);
-  const [searchbarTerm, setSearchbarTerm] = useState([]);
-  
-
-
+ 
   function addTrack(track) {
     if (playlistTracks.find(el => el.id === track.id)) {
       alert('Track already in the playlist');
@@ -28,32 +29,44 @@ function App() {
   }
 
   function updatePlaylistName(name) {
-    setPlaylistName(name);
+    return name;
   }
 
-  function savePlaylist() {
-   let trackURIS = []
-   return (
-    trackURIS = playlistTracks.filter(track => track.uri)
-    )  
-   }
+
+   function savePlaylist() {
+      let trackUris = [];
+      playlistTracks.forEach(track => {
+        trackUris.push(track.uri);
+      });
+      Spotify.savePlaylist(updatePlaylistName, trackUris)
+      .then(setPlaylistTracks([]))
+      .then(setPlaylistName(initialStatePlaylistName))
+      .then(Swal.fire({
+        position: 'center',
+        icon: 'success',
+        title: 'Congratulations! Your playlist has been saved to your account!',
+        showConfirmButton: false,
+        timer: 2500
+      }))
+    }
+
 
   function search(term) {
-    Spotify.search(term)
-    .then(tracks => {
-      setSearchResults({tracks: tracks})
+    Spotify.search(term).then(result => {
+      setSearchResults(result)
     })
   }
+
 
   return (
   <div>
     <h1>Ja<span className="highlight">mmm</span>ing</h1>
       <div className="App">
-        <SearchBar onSearch={search} setSearchbarTerm={setSearchbarTerm}/>
-          <div className="App-playlist"> 
+        <SearchBar onSearch={search} />
+          <div className={`${searchResults[1] ? "App-playlist" : "Visibility"}`}>
             <SearchResults searchResults={searchResults} onAdd={addTrack}/>
-            <Playlist playlistName={playlistName} playlistTracks={playlistTracks} onRemove={removeTrack} onNameChange={updatePlaylistName} onSave={savePlaylist}/>           
-          </div>
+            <Playlist playlistTracks={playlistTracks} onRemove={removeTrack} onNameChange={updatePlaylistName} onSave={savePlaylist} playlistName={playlistName}/>  
+          </div>   
       </div>
   </div>
   );

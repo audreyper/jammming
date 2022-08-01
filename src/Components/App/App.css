@@ -9,16 +9,15 @@ html {
 }
 
 h1 {
-  padding: .77rem 0;
-  background-color: #010c3f;
+  background-color: transparent;
   text-align: center;
   font-family: 'Poppins', sans-serif;
-  font-size: 1.88rem;
-  color: #fff;
+  font-size: 2.8rem;
+  color:#6c41ec;
 }
 
 h1 .highlight {
-  color: #6c41ec;
+  color:blue;
 }
 
 h2 {
@@ -29,7 +28,7 @@ h2 {
 .App {
   height: 100%;
   padding: 0 17% 10% 17%;
-  background-image: url('./background_photo_desktop.jpg');
+  background-image: url('./background_photo.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -43,6 +42,12 @@ h2 {
   justify-content: space-between;
   width: 100%;
 }
+
+.Visibility {
+  visibility: hidden;
+}
+
+
 
 @media only screen and (max-width: 1020px) {
   .App-playlist {
