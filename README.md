@@ -52,7 +52,7 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+### Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
@@ -81,13 +81,13 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# jammming
 
-#Prerequisites
+
+# Prerequisites
 You will need to generate a Client ID at https://developer.spotify.com/
 If you want to deploy, you will need to change the redirectUri in Spotify.js file to your own domain. To test it locally, change to localhost:3000. You will also need to add your domain in your Spotify app's settings under Redirect URIs.
 
-#Built With
+# Built With
 React
 Surge - Used to deploy
 SweetAlert - Used for alert box
