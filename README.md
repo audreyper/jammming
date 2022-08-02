@@ -84,10 +84,14 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 # Prerequisites
+
 You will need to generate a Client ID at https://developer.spotify.com/
-If you want to deploy, you will need to change the redirectUri in Spotify.js file to your own domain. To test it locally, change to localhost:3000. You will also need to add your domain in your Spotify app's settings under Redirect URIs.
+
+For local testing and deployment it is necessary to add a redirectUri in Spotify.js and under Spotify app's settings (developer dashboard).
 
 # Built With
 React
+
 Surge - Used to deploy
+
 SweetAlert - Used for alert box
