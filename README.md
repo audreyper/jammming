@@ -1,4 +1,20 @@
-# Getting Started with Create React App
+#Jammming
+
+An app to search for songs, albums or artists.
+
+It...
+
+1. Connects to your Spotify account
+2. Lets you search any song, artist or album based on keywords 
+3. Lets you add or remove songs to a custom playlist
+4. Lets you choose your own playlist name
+5. Saves your playlist to your Spotify account
+
+### Try it live at :
+http://jammming-with-you.surge.sh
+
+
+# Getting Started 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -69,3 +85,12 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 # jammming
+
+#Prerequisites
+You will need to generate a Client ID at https://developer.spotify.com/
+If you want to deploy, you will need to change the redirectUri in Spotify.js file to your own domain. To test it locally, change to localhost:3000. You will also need to add your domain in your Spotify app's settings under Redirect URIs.
+
+#Built With
+React
+Surge - Used to deploy
+SweetAlert - Used for alert box
