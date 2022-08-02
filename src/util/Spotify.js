@@ -1,7 +1,8 @@
 
-const redirectURI = 'http://localhost:3000';
+import apiConfig from './apiKeys';
+const clientID = apiConfig.clientID;
 
-const clientID = 'fdfd2ae3d43e4d02a266bbfbbcefb7ef';
+const redirectURI = 'http://localhost:3000';
 
 let accessToken;
 

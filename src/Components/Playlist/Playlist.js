@@ -10,6 +10,8 @@ function Playlist({ playlistName, playlistTracks, onRemove, onNameChange, onSave
 
     return (
        <div className="Playlist">
+         <h2>Playlist</h2>
+         <h3>Save your playlist to your Spotify account</h3>
          <input onChange={handleNameChange} placeholder={playlistName}/>
          <TrackList tracks={playlistTracks} onRemove={onRemove} isRemoval={true}/>
          <button className="Playlist-save" onClick={onSave}>SAVE YOUR NEW PLAYLIST TO SPOTIFY</button>

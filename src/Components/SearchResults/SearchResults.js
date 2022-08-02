@@ -7,7 +7,7 @@ function SearchResults({ searchResults, onAdd }) {
     return (
       <div className="SearchResults">
         <h2>Results</h2>
-        <h4>Click the + sign to add songs to your playlist</h4>
+        <h3>Click the + sign to add songs to your playlist</h3>
         <TrackList tracks={searchResults} onAdd={onAdd} isRemoval={false}/>
       </div>
     );

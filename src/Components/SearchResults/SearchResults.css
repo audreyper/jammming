@@ -20,6 +20,10 @@
     }
   }
 
-  .SearchResults h4 {
-    color:beige;
+  .Playlist h2 {
+    font-size: 1.5rem;
+    justify-content: center;
   }
+
+  
+
