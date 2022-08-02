@@ -1,24 +1,21 @@
-#Jammming
-
-An app to search for songs, albums or artists.
+# Jammming
 
 It...
-
 1. Connects to your Spotify account
 2. Lets you search any song, artist or album based on keywords 
 3. Lets you add or remove songs to a custom playlist
 4. Lets you choose your own playlist name
-5. Saves your playlist to your Spotify account
+5. Saves your custom playlist to your Spotify account
 
 ### Try it live at :
 http://jammming-with-you.surge.sh
 
 
-# Getting Started 
+## Getting Started 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### Available Scripts
 
 In the project directory, you can run:
 
