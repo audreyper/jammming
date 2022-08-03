@@ -32,7 +32,6 @@ function App() {
     return name;
   }
 
-
    function savePlaylist() {
       let trackUris = [];
       playlistTracks.forEach(track => {
@@ -40,7 +39,6 @@ function App() {
       });
       Spotify.savePlaylist(updatePlaylistName, trackUris)
       .then(setPlaylistTracks([]))
-      .then(setPlaylistName(initialStatePlaylistName))
       .then(Swal.fire({
         position: 'center',
         icon: 'success',
@@ -48,13 +46,16 @@ function App() {
         showConfirmButton: false,
         timer: 2500
       }))
+      .then(setTimeout(function(){window.location.reload()}, 2500));
+      
     }
 
 
   function search(term) {
-    Spotify.search(term).then(result => {
+    Spotify.search(term)
+      .then(result => {
       setSearchResults(result)
-    })
+    });
   }
 
 
