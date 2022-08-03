@@ -3,7 +3,7 @@ import clientIDConfig from './clientID';
 
 const clientID = clientIDConfig.clientID;
 
-const redirectURI = 'http://localhost:3000';
+const redirectURI = 'http://jammming-with-you.surge.sh';
 
 let accessToken;
 
