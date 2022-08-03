@@ -1,8 +1,21 @@
-# Getting Started with Create React App
+# Jammming
+
+It...
+1. Connects to your Spotify account
+2. Lets you search any song, artist or album based on keywords 
+3. Lets you add or remove songs to a custom playlist
+4. Lets you choose your own playlist name
+5. Saves your custom playlist to your Spotify account
+
+### Try it live at :
+http://jammming-with-you.surge.sh
+
+
+## Getting Started 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### Available Scripts
 
 In the project directory, you can run:
 
@@ -39,7 +52,7 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+### Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
@@ -68,4 +81,17 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# jammming
+
+
+# Prerequisites
+
+You will need to generate a Client ID at https://developer.spotify.com/
+
+For local testing and deployment it is necessary to add a redirectUri in Spotify.js and under Spotify app's settings (developer dashboard).
+
+# Built With
+React
+
+Surge - Used to deploy
+
+SweetAlert - Used for alert box
