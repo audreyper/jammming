@@ -3,7 +3,7 @@ import clientIDConfig from './clientID';
 
 const clientID = clientIDConfig.clientID;
 
-const redirectURI = 'http://jammming-with-you.surge.sh';
+const redirectURI = 'https://jammming-demo.netlify.app';
 
 let accessToken;
 
