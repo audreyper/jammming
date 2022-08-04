@@ -7,8 +7,8 @@ It...
 4. Lets you choose your own playlist name
 5. Saves your custom playlist to your Spotify account
 
-### Try it live at :
-http://jammming-with-you.surge.sh
+### Try it live at 
+https://jammming-demo.netlify.app
 
 
 ## Getting Started 
@@ -90,8 +90,9 @@ You will need to generate a Client ID at https://developer.spotify.com/
 For local testing and deployment it is necessary to add a redirectUri in Spotify.js and under Spotify app's settings (developer dashboard).
 
 # Built With
-React
 
-Surge - Used to deploy
+[React](https://reactjs.org/)
 
-SweetAlert - Used for alert box
+[Netlify](https://www.netlify.com/) - Used to deploy
+
+[SweetAlert](https://sweetalert2.github.io/#download) - Used for alert box
