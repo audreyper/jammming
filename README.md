@@ -93,6 +93,6 @@ For local testing and deployment it is necessary to add a redirectUri in Spotify
 
 [React](https://reactjs.org/)
 
-[Netlify](https://www.netlify.com/) - Used to deploy
-
 [SweetAlert](https://sweetalert2.github.io/#download) - Used for alert box
+
+[Netlify](https://www.netlify.com/) - Used to deploy
